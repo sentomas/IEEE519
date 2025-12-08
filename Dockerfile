@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # 3. Copy Project files first (for caching layers)
-COPY Project.toml Manifest.toml ./
+COPY Project.toml ./
 
 # 4. Install and Precompile Packages
 # We run this during BUILD so the startup on Render is faster
