@@ -1,0 +1,56 @@
+# --- Julia ---
+# Compiled files and pre-compilation caches
+*.ji
+*.jl.cov
+*.jl.*.cov
+*.so
+*.dll
+*.dylib
+
+# Documentation build folder
+docs/build/
+docs/site/
+
+# Local Julia environment (if you are using a local env)
+.julia/
+
+# --- Project Specific Data (IMPORTANT) ---
+# Ignore large CSV measurement files
+*.csv
+*.xlsx
+data/
+
+# Ignore generated plots/images (if saved to disk)
+*.png
+*.jpg
+*.svg
+*.pdf
+
+# --- Node/Web (If you use React/Vite later) ---
+node_modules/
+dist/
+build/
+.env
+.env.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- IDE & OS Settings ---
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# --- Temporary/Backup Files ---
+*~
+*.swp
+*.bak
+*.tmp
