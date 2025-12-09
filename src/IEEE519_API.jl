@@ -180,5 +180,5 @@ function CorsMiddleware(handler)
     end
 end
 
-println("Starting IEEE 519 API on http://localhost:8080")
-serve(port=8080, middleware=[CorsMiddleware])
+println("Starting IEEE 519 API on 0.0.0.0:8080")
+serve(host="0.0.0.0", port=8080, middleware=[CorsMiddleware])
