@@ -190,7 +190,7 @@
 <div class="container">
     <header>
         <div class="header-title">
-            <h1>Platform 1 Analysis <span class="badge">IEEE 519-2022</span></h1>
+            <h1>Platform ONE <span class="badge">IEEE 519-2022</span></h1>
         </div>
         
         <div class="api-status">
@@ -244,8 +244,9 @@
 </div>
 
 <script>
-    const API_URL = "http://localhost:8080";
-
+    //const API_URL = "http://localhost:8080"; // for local computer usage 
+    const API_URL="";
+    
     // --- 1. AUTOMATIC CONNECTION CHECK ---
     window.addEventListener('DOMContentLoaded', checkConnection);
 
@@ -259,13 +260,13 @@
             
             if (response.ok) {
                 dot.className = "status-dot online";
-                text.innerText = "API Connected";
+                text.innerText = "AATRAL Connected";
             } else {
-                throw new Error("API Error");
+                throw new Error("AATRALError");
             }
         } catch (err) {
             dot.className = "status-dot offline";
-            text.innerText = "API Offline";
+            text.innerText = "AATRAL Offline";
             console.log("Connection check failed:", err);
         }
     }
