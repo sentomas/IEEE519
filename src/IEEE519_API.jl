@@ -160,7 +160,13 @@ end
     end
 end
 # --- ADD THIS TO JULIA FILE FOR HEALTH CHECK ---
+# 1. Serve the Dashboard at the root URL
 @get "/" function()
+    return file("frontend/index.html")
+end
+
+# 2. Move the Health Check to a specific path (Optional but good)
+@get "/health" function()
     return "API Online"
 end
 # --- 5. SERVER SETUP WITH CORS ---
